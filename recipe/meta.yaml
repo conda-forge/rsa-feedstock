@@ -13,6 +13,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
+  noarch: python
   entry_points:
     - pyrsa-priv2pub = rsa.util:private_to_public
     - pyrsa-keygen = rsa.cli:keygen
@@ -23,11 +24,12 @@ build:
     - pyrsa-encrypt-bigfile = rsa.cli:encrypt_bigfile
     - pyrsa-decrypt-bigfile = rsa.cli:decrypt_bigfile
 
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
+    - pip
     - python
     - setuptools
     - pyasn1 >=0.1.3
