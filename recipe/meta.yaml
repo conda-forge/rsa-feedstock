@@ -29,8 +29,8 @@ build:
 
 requirements:
   host:
-    - pip
     - python
+    - pip
     - pyasn1 >=0.1.3
 
   run:
