@@ -1,7 +1,7 @@
 {% set name = "rsa" %}
-{% set version = "3.4.2" %}
+{% set version = "4.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "25df4e10c263fb88b5ace923dd84bf9aa7f5019687b5e55382ffcdb8bede9db5" %}
+{% set hash_val = "1a836406405730121ae9823e19c6e806c62bbad73f890574fff50efa4122c487" %}
 
 package:
   name: {{ name }}
@@ -24,7 +24,7 @@ build:
     - pyrsa-encrypt-bigfile = rsa.cli:encrypt_bigfile
     - pyrsa-decrypt-bigfile = rsa.cli:decrypt_bigfile
 
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
