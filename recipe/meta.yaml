@@ -43,10 +43,11 @@ test:
 about:
   home: https://stuvel.eu/rsa
   license: Apache 2.0
-  summary: 'Pure-Python RSA implementation'
   license_family: APACHE
   license_file: LICENSE
+  summary: 'Pure-Python RSA implementation'
 
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - dbast
