@@ -33,16 +33,19 @@ test:
   imports:
     - rsa
   commands:
+    - pip check
     - pyrsa-priv2pub --help
     - pyrsa-keygen --help
     - pyrsa-encrypt --help
     - pyrsa-decrypt --help
     - pyrsa-sign --help
     - pyrsa-verify --help
+  requires:
+    - pip
 
 about:
   home: https://stuvel.eu/rsa
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
   summary: Pure-Python RSA implementation
