@@ -24,6 +24,7 @@ build:
 requirements:
   host:
     - pip
+    - poetry
     - python
   run:
     - pyasn1 >=0.1.3
