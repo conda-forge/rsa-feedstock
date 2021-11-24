@@ -25,10 +25,10 @@ requirements:
   host:
     - pip
     - poetry
-    - python
+    - python >=3.6
   run:
     - pyasn1 >=0.1.3
-    - python
+    - python >=3.6
 
 test:
   imports:
