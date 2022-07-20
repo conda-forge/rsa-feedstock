@@ -1,5 +1,5 @@
 {% set name = "rsa" %}
-{% set version = "4.8" %}
+{% set version = "4.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5c6bd9dc7a543b7fe4304a631f8a8a3b674e2bbfc49c2ae96200cdbe55df6b17
+  sha256: e38464a49c6c85d7f1351b0126661487a7e0a14a50f1675ec50eb34d4f20ef21
 
 build:
   number: 0
